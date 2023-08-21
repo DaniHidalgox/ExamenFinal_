@@ -8,7 +8,7 @@ package Administracion.ListaTicket;
  */
 import Administracion.Admin_Tickets;
 import java.util.ArrayList;
-import sun.security.krb5.internal.Ticket;
+
 
 public class AdministrarTicket {
    private ArrayList<Admin_Tickets> listaTicketes;

@@ -2,7 +2,7 @@
 package Controlador;
 
 import Administracion.ListaTicket.AdministrarTicket;
-import sun.security.krb5.internal.Ticket;
+
 
 /**
  *
@@ -15,10 +15,12 @@ public class Controlar {
     public Controlar(AdministrarTicket adminTicker) {
         this.adminTicker = adminTicker;
     }
-   public void GenerarTicket(Ticket ticket){
-    
-           
+   public void GenerarTicket(AdministrarTicket ticket){
+   
+   
    }
-   public void Atender
+   public void AtenderTicket(AdministrarTicket ticket){
+       
+   }
 }
 
