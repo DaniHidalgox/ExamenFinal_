@@ -42,6 +42,11 @@ Controlar control= new Controlar();
         });
 
         cboTipoTickete.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Plataformas (P)", "Cajas (C)", "Preferencial (A)" }));
+        cboTipoTickete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboTipoTicketeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -50,9 +55,9 @@ Controlar control= new Controlar();
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(txtNumeroaGenerar, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addGap(32, 32, 32)
                 .addComponent(btnGenerar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(cboTipoTickete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
         );
@@ -71,10 +76,14 @@ Controlar control= new Controlar();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarActionPerformed
-       String numeroGenerar=txtNumeroaGenerar.getText();
-       control.generarTicket(numeroGenerar);
+       String numeroGenerar=txtNumeroaGenerar.getText(control.generarTicket(tipo));
        
+   
     }//GEN-LAST:event_btnGenerarActionPerformed
+
+    private void cboTipoTicketeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboTipoTicketeActionPerformed
+      
+    }//GEN-LAST:event_cboTipoTicketeActionPerformed
 
     /**
      * @param args the command line arguments

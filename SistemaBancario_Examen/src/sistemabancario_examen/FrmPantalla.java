@@ -66,7 +66,7 @@ public class FrmPantalla extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void VerTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerTicketActionPerformed
-        
+        txtTicketdePantalla.getText();
     }//GEN-LAST:event_VerTicketActionPerformed
 
     /**
