@@ -1,6 +1,8 @@
 
 package Administracion.ListaTicket;
 
+import java.util.ArrayList;
+
 
 
 
@@ -9,6 +11,10 @@ package Administracion.ListaTicket;
  * @author Daniel Hidalgo
  */
 public class AdministrarListaCliente {
+
+      ArrayList<String> lista = new ArrayList<String>();
+   
+    
 
        
 }
