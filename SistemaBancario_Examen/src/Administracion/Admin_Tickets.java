@@ -10,12 +10,11 @@ package Administracion;
  */
 public class Admin_Tickets {
     private int numero;
-    private String Tipo;
     private String tipo;
 
-    public Admin_Tickets(int numero, String Tipo) {
+    public Admin_Tickets(int numero, String tipo) {
         this.numero = numero;
-        this.Tipo = Tipo;
+        this.tipo = tipo;
     }
 
     public int getNumero() {
@@ -27,12 +26,14 @@ public class Admin_Tickets {
     }
 
     public String getTipo() {
-        return Tipo;
+        return tipo;
     }
 
-    public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
+
+   
    
    public String toString() {
       return "Ticket " + this.numero + " de tipo " + this.tipo;
