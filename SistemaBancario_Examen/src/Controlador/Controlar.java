@@ -11,6 +11,10 @@ import Administracion.ListaTicket.AdministrarTicket;
 public class Controlar {
    private Admin_Tickets listaTicketes;
 
+    public Controlar() {
+    }
+   
+
    public Controlar(Admin_Tickets listaTicketes) {
         this.listaTicketes = listaTicketes;
   }
