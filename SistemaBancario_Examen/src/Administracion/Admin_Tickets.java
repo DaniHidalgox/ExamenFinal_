@@ -36,7 +36,7 @@ public class Admin_Tickets {
    
    
    public String toString() {
-      return "Ticket " + this.numero + " de tipo " + this.tipo;
+      return "Ticket " + this.numero+"del tipo"+this.tipo;
    }
 }
 

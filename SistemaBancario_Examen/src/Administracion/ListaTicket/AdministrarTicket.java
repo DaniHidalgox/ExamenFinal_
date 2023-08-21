@@ -6,26 +6,28 @@ package Administracion.ListaTicket;
  *
  * @author Daniel Hidalgo
  */
+import Administracion.Admin_Tickets;
 import java.util.ArrayList;
 import sun.security.krb5.internal.Ticket;
 
 public class AdministrarTicket {
-   private ArrayList<Ticket> listaTickets;
+   private ArrayList<Admin_Tickets> listaTicketes;
 
-    public AdministrarTicket(ArrayList<Ticket> listaTickets) {
-        this.listaTickets = listaTickets;
+    public AdministrarTicket(ArrayList<Admin_Tickets> listaTickets) {
+        this.listaTicketes = listaTickets;
     }
 
 
-   public void agregarTicket(Ticket ticket) {
-      this.listaTickets.add(ticket);
+   public void agregarTicket(Admin_Tickets ticket) {
+      this.listaTicketes.add(ticket);
    }
 
- public void eliminarTicket(Ticket ticket){
-     this.listaTickets.remove(ticket);
+ public void eliminarTicket(Admin_Tickets tickets){
+     this.listaTicketes.remove(tickets);
  }
  
  public void eliminarTicket(int posicion){
-     this.listaTickets.remove(posicion);
+     this.listaTicketes.remove(posicion);
+    
  }
 }
