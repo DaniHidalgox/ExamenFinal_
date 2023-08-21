@@ -6,9 +6,10 @@ package Administracion.ListaTicket;
  *
  * @author Daniel Hidalgo
  */
+//  numero = adminTicker.getNumero() + 1;
+       //     break;
 import Administracion.Admin_Tickets;
 import java.util.ArrayList;
-
 
 public class AdministrarTicket {
    private ArrayList<Admin_Tickets> listaTicketes;
