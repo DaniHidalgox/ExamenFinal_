@@ -23,10 +23,10 @@ public class Controlar {
           if (listaTicketes.getTipo().equals(tipo)) {
             numero = listaTicketes.getNumero() + 1;
             break;
-          
          }
       }
+   }
 }
-}
-   
+
+
 
